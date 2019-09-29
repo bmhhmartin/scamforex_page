@@ -1,0 +1,140 @@
+body{
+    font-family: "Open Sans";
+    font-size: 17px;
+    line-height: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    color: #333;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
+    background-attachment: fixed;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.btn-warning{
+    background: #fed73a!important;
+    border: #fed73a!important;
+    color: #000;
+}
+.btn-warning:hover{
+    background: #e0bd31!important;
+    border: #e0bd31!important;
+}
+.btn-info{
+    background: #333!important;
+    border: #333!important;
+    //color: #3c763d;
+}
+.btn-info:hover{
+    background: #565656!important;
+    border: #565656!important;
+}
+
+a{
+    color: #000;
+}
+a:hover, a:focus{
+    color: #d63f3f;
+    text-decoration: none;
+}
+
+h1{
+    font-family: "Oswald";
+    font-size: 28px;
+    line-height: 26.4px;
+}
+h2{
+    font-family: "Oswald";
+    font-size: 25px;
+    line-height: 23px;
+}
+h2{
+    font-family: "Open Sans";
+    font-size: 23px;
+    line-height: 23px;
+}
+footer h2{
+    font-family: "Oswald";
+    font-size: 23px;
+    line-height: 23px;
+    color: #f00;
+}
+
+header{
+    background: #fed73a;
+    padding: 20px 0;
+}
+
+nav{
+    background: #333;
+}
+
+
+nav ul li a{
+    color: #fff;
+    font-size: 15px;
+}
+nav ul li a:hover,nav ul li a:focus{
+    color: #000;
+}
+
+.nav .open a{
+    background: #fed73a!important;
+    color: #000;
+}
+.nav .open a:hover{
+    color: #fff!important;
+}
+
+.nav li a:focus, .nav li a:hover{
+    background: #fed73a!important;
+}
+
+.nav ul.dropdown-menu,.nav.dropdownhover{
+    background: #fed73a!important;
+}
+
+
+/*image silder*/
+.image-slider{
+    background: #fed73a!important;
+}
+
+
+footer{
+    background: #fed73a;
+}
+
+
+/*Side Bar*/
+#side_bar{
+    font-size: 13px;
+    line-height: 15px;
+}
+.side_bar_border{
+    border: 1px solid #a7a7a7;
+    background: #fff;
+}
+#side_bar h3{
+    font-size: 23px;
+    padding: 0;
+    margin: 5px;
+}
+.side_bar_prime_new{
+    background: #f5c043!important;
+}
+
+.inside_news_bar{
+    background: yellow;
+}
+
+
+footer ul li a{
+    padding: 0;
+    margin: 0;
+}

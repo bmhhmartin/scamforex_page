@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ScamForex</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />        
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald" />
+        <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <style>
+            #return-to-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;    
+                background: url(images/scrolling-top2.png) no-repeat;
+                background-position: center center;
+                width: 50px;
+                height: 50px;
+                display: block;
+                text-decoration: none;
+                //-webkit-border-radius: 35px;
+                //-moz-border-radius: 35px;
+                //border-radius: 35px;
+                display: none;
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }            
+            #return-to-top:hover {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;    
+                background: url(images/scrolling-top.png) no-repeat;
+                background-position: center center;
+                width: 50px;
+                height: 50px;
+                display: block;
+                text-decoration: none;
+                //-webkit-border-radius: 35px;
+                //-moz-border-radius: 35px;
+                //border-radius: 35px;
+                display: none;
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }            
+            #return-to-top i {
+                color: #fff;
+                margin: 0;
+                position: relative;
+                left: 16px;
+                top: 13px;
+                font-size: 19px;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-lg-12">
+                        <a href="#"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-lg-12">
+                        <div class="row">
+                            <div class="pull-right">
+                                <div class="col-lg-12 form-group form-group-lg field-contact-name required has-error">
+                                    <a href="#">Register</a> | <a href="#">Sign in</a>
+                                    <input type="text" class="btn" placeholder="Type here...">
+                                    <input type="submit" value="Search" class="btn btn-info">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> 
+        <!--Menu-->
+        <nav>             
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 collapse navbar-collapse" id="MobileMenu">                        
+                        <ul id="w0" class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button">Forex Starters <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdownhover" role="menu">
+                                    <li class="dropdown"><a href="#">What indicators are</a></li>
+                                    <li class="dropdown"><a href="#">Forex Glossary</a></li>
+                                    <li class="dropdown"><a href="#">What indicators are</a></li>
+                                    <li class="dropdown"><a href="#">Forex Trading FAQs</a></li>
+                                    <li class="dropdown"><a href="#">Trading Platforms</a></li>
+                                    <li class="dropdown"><a href="#">Tips and Ideas</a></li>
+                                </ul>
+                            </li>  
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button">Forex Broker <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdownhover" role="menu">
+                                    <li class="dropdown"><a href="#">Forex brokers</a></li>
+                                    <li class="dropdown"><a href="#">List of all Brokers</a></li>
+                                </ul>
+                            </li>  
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button">Web resources <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdownhover" role="menu">
+                                    <li class="dropdown"><a href="#">Web resources for traders</a></li>
+                                    <li class="dropdown"><a href="#">List of resources</a></li>
+                                </ul>
+                            </li>  
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button">Expert Advisor <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdownhover" role="menu">
+                                    <li class="dropdown"><a href="#">What is Expert Advisor?</a></li>
+                                    <li class="dropdown"><a href="#">List of all Expert Advisors</a></li>
+                                </ul>
+                            </li>  
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button">Scam Alert <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdownhover" role="menu">
+                                    <li class="dropdown"><a href="#">File a complaint</a></li>
+                                    <li class="dropdown"><a href="#">All complaints</a></li>
+                                    <li class="dropdown"><a href="#">List of scammers</a></li>
+                                </ul>
+                            </li>  
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button">Forex instruments <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdownhover" role="menu">
+                                    <li class="dropdown"><a href="#">Forex services</a></li>
+                                    <li class="dropdown"><a href="#">Economic Calendar</a></li>
+                                    <li class="dropdown"><a href="#">Forex news</a></li>
+                                </ul>
+                            </li>  
+                            <li id="lang-picker" class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-globe"></i><span> English</span> <b class="caret"></b></a><ul id="w1" class="dropdown-menu"><li><a href="" tabindex="-1">Русский</a></li></ul></li>
+                        </ul>
+                    </div>
+                    <button style="border: 1px solid #fff; color: #fff; font-size: 15px; padding: 5px;" class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#MobileMenu">
+                        MENU
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!--Image Slider-->
+        <section class="image-slider" >
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img src="images/banner1.jpg" alt="">
+                                <div class="carousel-caption">
+                                    <h2>Trading Platforms</h2>
+                                    <p>In this section you will find reviews on the most popular Forex trading platforms, which enable you to carry out different calculations, buy or sell assets, currencies or other trading instruments online. A trading platform is an essential part of trading. With the help of it, you will always keep abreast of the state of your account and deals, number of open positions, and amount of profits and losses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img src="images/banner2.jpg" alt="">
+                                <div class="carousel-caption">
+                                    <h2>Forex Instruments</h2>
+                                    <p>The Forex Instruments section includes currency quotes, analytical reviews, news feed, online charts, economic calendar, and other helpful Forex services. Using all the available tools, you will simplify your trading and develop your own trading strategy that will bring real profits.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img src="images/banner3.jpg" alt="">
+                                <div class="carousel-caption">
+                                    <h2>Forex Starters</h2>
+                                    <p>This section is tailored for newcomers to the forex market. Here you will learn different terms and key mechanisms of trading and will find out what to begin with on the currency market. Study the basics of Forex trading and become a successful market participant.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+
+        <!--Shadow Section-->
+        <section  style="background: url(images/shadow.png); background-repeat: repeat-x; background-position: left bottom; height: 30px;">
+        </section>
+
+
+        <!--Main Content-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h1><i class="fa fa-users" aria-hidden="true"></i> Top brokers</h1>
+                        <p>Top exchange brokers is an independent assessment given by individual traders, both beginners and professionals. The brokers' rating is an essential instrument for choosing a reliable Forex company. Leave your comment on a broker. Every opinion is important.</p>
+                        <button class="btn btn-warning">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h1><i class="fa fa-user" aria-hidden="true"></i> Top Resources</h1>
+                        <p>The most useful web resources for trading on Forex. Ratings of leading forex brokers, most profitable signals, online charts, and popular financial literature are collected in a single section for your convenience.</p>
+                        <button class="btn btn-warning">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h1><i class="fa fa-line-chart" aria-hidden="true"></i> Top Brokers</h1>
+                        <p>Trade automatically with the most reliable Forex advisors. The rating of the best expert advisors will help you pick up a really worthwhile advisor among many others.</p>
+                        <button class="btn btn-warning">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Space DIV-->
+        <section  style="height: 30px;">
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h1>About Scamforex.com</h1>
+                                <p>
+                                    The scamforex.com website is an informational portal for both beginners and experienced traders. Here you can find trustworthy and relevant information about the forex market, including comments of real traders on brokers and opinions of professionals willing to share their knowledge and experience.
+                                </p>
+                                <p>
+                                    Scamforex.com has several main sections, the content of which is constantly updated, thus making them a source of fresh news, forecasts and new forex strategies. If you have just started to learn basics of trading, then the section for beginners is tailor-made for you. Here you will know how to become a real participant of Forex and gain needed skills for the first steps in trading.
+                                </p>
+                                <p>
+                                    In the Forex brokers section, the rating of leading companies providing brokerage services on Forex is presented. Thanks to this section, you will be able to pick up a needed broker based on comments of real traders because a company’s reputation is one of the key criteria of its reliability.
+                                </p>
+                                <p>
+                                    On the website, there are also tools simplifying the process of trading for those who are not ready yet to devote themselves to Forex fully. For example, you can download tested Forex signals from the Trading signals section. So, based on these signals, you will take a decision on opening a deal. The Forex services section with currency quotes, news line, analytical reviews, online charts, and calculator will also help you make a trading decision. Using all available forex services, you can raise your profits.
+                                </p>
+                                <p>
+                                    What is more, you can leave a comment on an unfair broker on the scamforex.com web portal. To send a complaint, you need to register, accurately state the point of a problem, and provide proof of unfairness. Complaints are considered in the shortest term. Once a complaint is approved, it becomes available to all users for discussion.
+                                </p>
+                                <p>
+                                    We hope that our website will help you start your own journey to the Forex world that will bring you lots of winning deals and profits.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Side Bar-->
+                    <div id="side_bar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-12 co-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-lg-12 side_bar_border">
+                                        <div class="text-center side_bar_prime_new row"><h3><i class="fa fa-list" aria-hidden="true"></i> Prime New</h3></div>
+                                        <div class="">
+                                            <div class="hero__title" id="animatedHeading">
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/1.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/2.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/3.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/4.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/5.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/6.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate"><div>
+                                                            <div class="col-lg-12">
+                                                                2016-10-04 06:26:00
+                                                            </div>
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/7.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/8.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/9.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>                                                        
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/10.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/11.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/12.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/13.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/14.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slick-dupe">
+                                                    <div class="hero__title-misc    animate">
+                                                        <div class="col-lg-12">
+                                                            2016-10-04 06:26:00
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-lg-6"><img class="img-responsive" src="images/side_bar/15.jpg"></div>
+                                                            <div class="col-lg-6">Heidelbergcement buys 96 percent of Italcementi</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12 co-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-lg-12 side_bar_border">
+                                        <div class="text-center side_bar_prime_new row"><h3><i class="fa fa-newspaper-o" aria-hidden="true"></i> Forex News</h3></div>
+                                        <div>
+                                            <marquee behavior="scroll" height="300px" scrolldelay="500" direction="up">
+                                                2016-10-04 10:25:00 GMT+00<br>
+                                                Nikkei Edges Up After Weak Yen Boosts Sentiment <br><br>
+                                                2016-10-04 10:25:00 GMT+00<br>
+                                                Nikkei Edges Up After Weak Yen Boosts Sentiment <br><br>
+                                                2016-10-04 10:25:00 GMT+00<br>
+                                                Nikkei Edges Up After Weak Yen Boosts Sentiment <br><br>
+                                                2016-10-04 10:25:00 GMT+00<br>
+                                                Nikkei Edges Up After Weak Yen Boosts Sentiment <br><br>
+                                                2016-10-04 10:25:00 GMT+00<br>
+                                                Nikkei Edges Up After Weak Yen Boosts Sentiment <br><br>
+                                                2016-10-04 10:25:00 GMT+00<br>
+                                                Nikkei Edges Up After Weak Yen Boosts Sentiment <br><br>
+                                            </marquee>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        
+
+        <!--Mini Slider-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-11 col-xs-11">
+                        <div class="row">
+                            <div class="center slider autoplay">
+                                <div class="mini-slider">
+                                    <img src="images/broker/1.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/2.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/3.png">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/4.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/5.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/6.png">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/7.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/8.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/9.png">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/10.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/11.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/12.png">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/13.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/14.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/15.gif">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/16.jpg">
+                                </div>
+                                <div class="mini-slider">
+                                    <img src="images/broker/17.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-xs-1"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Space DIV-->
+<!--        <section  style="height: 30px;">
+        </section>-->
+
+
+        <!--Shadow Section-->
+        <section  style="background: url(images/shadow2.png); background-repeat: repeat-x; background-position: left bottom; height: 30px;">
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h2>Forex Starters</h2>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">What is Forex?</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Forex Glossary</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">What indicators are</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Forex Trading FAQs</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Trading Platforms</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Tips and Ideas</a><br>
+
+                        <h2>Web Resources</h2>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Web resources for traders</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">List of resources</a><br>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h2>Forex Broker</h2>
+
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">File a complaint</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">All complaints</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">List of scammers</a><br>
+                        <h2>Forex instruments</h2>
+
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Forex services</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Economic Calendar</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Forex news</a><br>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h2>Expert Advisor</h2>
+
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">What is Expert Advisor?</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">List of all Expert Advisors</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">List of scammers</a><br>
+
+                        <h2>Scam Alert</h2>
+
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">File a complaint</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">All complaints</a><br>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">List of scammers</a><br>
+                    </div> 
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h2>More Information</h2>
+
+                        <a href=""><i class="fa fa-paper-plane" aria-hidden="true"></i> Send us your Feedback</a><br>
+                        <a href=""><i class="fa fa-info-circle" aria-hidden="true"></i> Want to know more?</a><br>
+                        <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Site map</a><br>
+                        <a href=""><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Disclaimer</a><br>
+                    </div> 
+                </div>
+            </div><br>
+        </footer>
+        <section style="background: #333; color: #fff; padding-top: 8px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>All Rights Reserved. © 2016</p>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="return-to-top">
+            <a href="javascript:"></a>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-dropdownhover.min.js"></script>        
+        <script>
+            // ===== Scroll to Top ==== 
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function () {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop: 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>   
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            //slick js
+            $(document).on('ready', function () {
+                $(".center").slick({
+                    dots: true,
+                    infinite: true,
+                    centerMode: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    autoplay: true,
+                    autoplaySpeed: 2000
+                });
+            });
+
+            // side bar js
+            var titleMain = $("#animatedHeading");
+            var titleSubs = titleMain.find("slick-active");
+
+            if (titleMain.length) {
+
+                titleMain.slick({
+                    autoplay: false,
+                    arrows: false,
+                    dots: false,
+                    slidesToShow: 3,
+                    centerPadding: "10px",
+                    draggable: false,
+                    infinite: true,
+                    pauseOnHover: false,
+                    swipe: false,
+                    touchMove: false,
+                    vertical: true,
+                    speed: 1000,
+                    autoplaySpeed: 5000,
+                    useTransform: true,
+                    cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+                    adaptiveHeight: true,
+                });
+
+                // On init
+                $(".slick-dupe").each(function (index, el) {
+                    $("#animatedHeading").slick('slickAdd', "<div>" + el.innerHTML + "</div>");
+                });
+
+                // Manually refresh positioning of slick
+                titleMain.slick('slickPlay');
+            }
+            ;
+        </script>
+        <script>
+            // ===== Scroll to Top ==== 
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function () {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop: 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    </body>
+</html>

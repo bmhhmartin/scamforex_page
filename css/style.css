@@ -1,0 +1,169 @@
+body{
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    color: #333;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-dotted-2.png");
+    background-attachment: fixed;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.btn-warning{
+    background: #38a5fe!important;
+    border: #38a5fe!important;
+    color: #fff;
+}
+.btn-warning:hover{
+    background: #2e8fde!important;
+    border: #2e8fde!important;
+}
+.btn-info{
+    background: #333!important;
+    border: #333!important;
+    //color: #3c763d;
+}
+.btn-info:hover{
+    background: #565656!important;
+    border: #565656!important;
+}
+
+a{
+    color: #000;
+}
+a:hover, a:focus{
+    color: #000;
+    text-decoration: none;
+}
+
+h1{
+    font-family: "Oswald";
+    font-size: 28px;
+    line-height: 26.4px;
+}
+h2{
+    font-family: "Oswald";
+    font-size: 25px;
+    line-height: 27px;
+}
+h3{
+    font-family: "Oswald";
+    font-size: 23px;
+    line-height: 23px;
+}
+footer h2{
+    font-family: "Oswald";
+    font-size: 23px;
+    line-height: 23px;
+    color: #fff;
+}
+
+header{
+    background: #38a5fe;
+    padding: 20px 0;
+}
+
+header a{
+    color: #fff;
+}
+
+nav{
+    background: #333;
+}
+
+
+nav ul li a{
+    color: #fff;
+    font-size: 15px;
+}
+nav ul li a:hover,nav ul li a:focus{
+    color: #000;
+}
+
+.nav .open a{
+    background: #38a5fe!important;
+    color: #000;
+}
+.nav .open a:hover{
+    color: #fff!important;
+}
+
+.nav li a:focus, .nav li a:hover{
+    background: #38a5fe!important;
+}
+
+.nav ul.dropdown-menu,.nav.dropdownhover{
+    background: #38a5fe!important;
+}
+
+
+/*image silder*/
+.carousel-control.left,.carousel-control.right{
+    background: none;
+}
+
+.image-slider{
+    color: #fff;
+}
+
+@media screen and (min-width: 768px){
+.image-slider .carousel-caption{
+    padding-bottom: 170px;
+}
+
+}
+
+footer{
+    background: #2289DD;
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+}
+
+
+/*Side Bar*/
+#side_bar{
+    font-size: 13px;
+    line-height: 15px;
+}
+.side_bar_border{
+    border: 1px solid #a7a7a7;
+    background: #fff;
+}
+#side_bar h3{
+    font-size: 23px;
+    padding: 0;
+    margin: 5px;
+}
+.side_bar_prime_new{
+    background: #38a5fe;
+    padding: 2px 0;
+    color: #fff;
+}
+
+.inside_news_bar{
+    background: #38a5fe;
+}
+
+
+footer ul li a{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*mini slider*/
+.mini-slider{
+    display: block!important;
+    width: 200px!important;
+    padding: 10px!important;
+}
